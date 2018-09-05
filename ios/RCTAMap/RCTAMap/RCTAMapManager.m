@@ -25,7 +25,7 @@ RCT_EXPORT_MODULE(RCTAMap)
 {
 //    RCTAMap *mapView = [[RCTAMap alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
     RCTAMap *mapView = [[RCTAMap alloc] initWithManager:self];
-    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    mapView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     mapView.delegate = self;
     
     self.search = [[AMapSearchAPI alloc] init];
